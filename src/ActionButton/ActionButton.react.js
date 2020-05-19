@@ -185,7 +185,7 @@ class ActionButton extends PureComponent {
     this.state = { render: 'button' };
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const { hidden } = this.props;
 
     if (nextProps.hidden !== hidden) {
